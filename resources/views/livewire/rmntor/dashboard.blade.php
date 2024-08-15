@@ -18,7 +18,7 @@
                 </span>
             </button>
 
-            <div x-show="selector_active" class="options absolute left-0 top-0 w-full h-full flex flex-col items-center justify-center bg-dark/60">
+            <div x-show="selector_active" class="options absolute left-0 top-0 w-full h-full flex flex-col items-center justify-center bg-dark/60 backdrop-blur-sm">
                 <ul class="bg-light w-60 rounded-[16px] overflow-hidden">
                     @for($i=1;$i<=6;$i++)
                     <li class="w-full flex items-center hover:bg-dark/10">
@@ -45,7 +45,7 @@
             </span>
         </button>
 
-        <div x-show="search_active" class="modal absolute bg-dark/50 left-0 top-0 w-full h-full flex flex-col items-center">
+        <div x-show="search_active" class="modal absolute bg-dark/50 backdrop-blur-sm left-0 top-0 w-full h-full flex flex-col items-center">
             <div class="box-modal bg-white max-md:w-[86%] w-[36%] p-4 rounded-[36px] mt-36">
                 <form class="bg-white border border-main pr-2 flex items-center justify-between rounded-full overflow-hidden" action="#" method="get">
                     <input name="search" autofocus class="bg-none text-sm w-full px-4 py-2 outline-none" type="text" placeholder="temukan sesuatu...">
