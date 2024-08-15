@@ -8,8 +8,8 @@
                 </svg>
             </span>
         </a>
-        <div x-data="{ active: false }" class="selector">
-            <button @click="active = true" class="select-btn flex items-center justify-between px-4 py-2 pr-1 bg-main/10 border border-main rounded-2xl">
+        <div x-data="{ selector_active: false }" class="selector">
+            <button @click="selector_active = true" class="select-btn flex items-center justify-between px-4 py-2 pr-1 bg-main/10 border border-main rounded-2xl">
                 <span class="text text-sm">Select</span>
                 <span class="icon ml-4">
                     <svg width="20" height="20" viewBox="0 0 0.375 0.375" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +18,7 @@
                 </span>
             </button>
 
-            <div x-show="active" x-transition class="options absolute left-0 top-0 w-full h-full flex flex-col items-center justify-center bg-dark/60">
+            <div x-show="selector_active" class="options absolute left-0 top-0 w-full h-full flex flex-col items-center justify-center bg-dark/60">
                 <ul class="bg-light w-60 rounded-[16px] overflow-hidden">
                     @for($i=1;$i<=6;$i++)
                     <li class="w-full flex items-center hover:bg-dark/10">
@@ -27,7 +27,7 @@
                     </li>
                     @endfor
                 </ul>
-                <span @click="active = false" class="bg-light/30 text-light p-2 mt-2 flex items-center justify-center rounded-full cursor-pointer">
+                <span @click="selector_active = false" class="bg-light/30 text-light p-2 mt-2 flex items-center justify-center rounded-full cursor-pointer">
                     <svg width="20" height="20" viewBox="0 0 0.6 0.6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="stroke-light" d="m.425.175-.25.25m0-.25.25.25" stroke-width=".05" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -35,14 +35,34 @@
             </div>
         </div>
     </div>
-    <form class="bg-[#fff] pr-2 flex items-center rounded-2xl overflow-hidden" action="#" method="get">
-        <input class="bg-none text-sm px-4 py-2 outline-none" type="text" placeholder="temukan sesuatu...">
-        <button type="submit">
-            <svg width="20" height="20" viewBox="0 0 0.6 0.6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="fill-main" fill-rule="evenodd" clip-rule="evenodd" d="M.275.125a.15.15 0 1 0 0 .3.15.15 0 0 0 0-.3m-.2.15a.2.2 0 1 1 .358.123l.085.085a.025.025 0 0 1-.035.035L.398.433A.2.2 0 0 1 .075.275"/>
-            </svg>
+    <div x-data="{search_active: false}" class="search-btn">
+        <button @click="search_active = true" class="bg-white/50 border-2 border-white pr-2 rounded-full flex items-center justify-between">
+            <span class="text-left w-60 text-sm py-2 px-4 opacity-50">Temukan sesuatu...</span>
+            <span>
+                <svg width="20" height="20" viewBox="0 0 0.6 0.6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-main" fill-rule="evenodd" clip-rule="evenodd" d="M.275.125a.15.15 0 1 0 0 .3.15.15 0 0 0 0-.3m-.2.15a.2.2 0 1 1 .358.123l.085.085a.025.025 0 0 1-.035.035L.398.433A.2.2 0 0 1 .075.275"/>
+                </svg>
+            </span>
         </button>
-    </form>
+
+        <div x-show="search_active" class="modal absolute bg-dark/50 left-0 top-0 w-full h-full flex flex-col items-center">
+            <div class="box-modal bg-white w-[36%] p-4 rounded-[36px] mt-36">
+                <form class="bg-white border border-main pr-2 flex items-center justify-between rounded-full overflow-hidden" action="#" method="get">
+                    <input name="search" autofocus class="bg-none text-sm w-full px-4 py-2 outline-none" type="text" placeholder="temukan sesuatu...">
+                    <button type="submit">
+                        <svg width="20" height="20" viewBox="0 0 0.6 0.6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-main" fill-rule="evenodd" clip-rule="evenodd" d="M.275.125a.15.15 0 1 0 0 .3.15.15 0 0 0 0-.3m-.2.15a.2.2 0 1 1 .358.123l.085.085a.025.025 0 0 1-.035.035L.398.433A.2.2 0 0 1 .075.275"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <span @click="search_active = false" class="bg-light/30 text-light p-2 mt-2 flex items-center justify-center rounded-full cursor-pointer">
+                <svg width="20" height="20" viewBox="0 0 0.6 0.6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="stroke-light" d="m.425.175-.25.25m0-.25.25.25" stroke-width=".05" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+        </div>
+    </div>
 </x-slot:toolbar>
 
 <section>
