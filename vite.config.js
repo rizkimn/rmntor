@@ -5,7 +5,7 @@ export default defineConfig({
     server: {
         host: true,
         hmr: {
-            host: '192.168.0.103'
+            host: '0.0.0.0'
         }
     },
     plugins: [
