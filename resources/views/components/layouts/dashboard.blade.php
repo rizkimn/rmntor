@@ -10,7 +10,7 @@
     </head>
     <body class="bg-light flex min-h-[100vh]">
         <div class="flex w-full">
-            <livewire:rmntor.sidebar />
+            <x-rmntor.layout-sidebar />
             <div class="w-full">
                 <nav class="toolbar w-full min-h-[66px] flex justify-between items-center p-4">
                     {{-- Because she competes with no one, no one can compete with her. --}}
