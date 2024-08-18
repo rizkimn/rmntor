@@ -16,7 +16,7 @@
                         <circle class="fill-main/50" cx="12" cy="7" r="4" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/>
                     </svg>
                 </span>
-                <span class="max-md:hidden text name ml-1">Le Minerale</span>
+                <span class="max-md:hidden text-sm name ml-1">Le Minerale</span>
             </li>
             <li x-show="open" x-transition class="user h-10 flex items-center hover:bg-danger/10 max-md:rounded-[10px] rounded-xl">
                 <form class="w-full" action="/logout" method="post"> @csrf @method('DELETE')
@@ -26,7 +26,7 @@
                                 <path class="stroke-danger" d="M14 4h3.5c3.058 0 3 4 3 8s.058 8-3 8H14M3 12h12M3 12l4-4m-4 4 4 4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </span>
-                        <span class="max-md:hidden text name ml-1">Logout</span>
+                        <span class="max-md:hidden text-sm name ml-1">Logout</span>
                     </button>
                 </form>
             </li>
@@ -55,7 +55,7 @@
                     <span class="{{"icon flex items-center justify-center p-2 rounded-xl " . (request()->is($item['href']) ? "bg-main/10" : "bg-main/0")}}">
                         <x-rmntor.icon :name="$item['icon']" />
                     </span>
-                    <span class="{{"max-md:hidden text name ml-2 group-hover:opacity-100 transition-all " . "opacity-100"}}"">{{$item['name']}}</span>
+                    <span class="{{"max-md:hidden text-sm name ml-2 group-hover:opacity-100 " . (request()->is($item['href']) ? "opacity-100" : "opacity-40")}}"">{{$item['name']}}</span>
                 </a>
             </li>
             @endforeach
