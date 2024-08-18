@@ -6,13 +6,13 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class LayoutSidebar extends Component
+class Icon extends Component
 {
     /**
      * Create a new component instance.
      */
     public function __construct(
-        public array $menuGroups,
+        public string $name,
     ) {/** */}
 
     /**
@@ -20,6 +20,6 @@ class LayoutSidebar extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.rmntor.layout-sidebar');
+        return view('components.rmntor.icon');
     }
 }

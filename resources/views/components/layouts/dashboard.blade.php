@@ -1,3 +1,23 @@
+@php
+    $menuGroups = [
+        [
+            'name' => 'Menu',
+            'items' => [
+                [
+                    'name' => 'Dashboard',
+                    'href' => 'dashboard',
+                    'icon' => 'dashboard-icon',
+                ],
+                [
+                    'name' => 'Tables',
+                    'href' => 'dashboard/tables',
+                    'icon' => 'tables-icon',
+                ],
+            ],
+        ]
+    ]
+@endphp
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -10,7 +30,7 @@
     </head>
     <body class="bg-light flex min-h-[100vh]">
         <div class="flex w-full">
-            <x-rmntor.layout-sidebar />
+            <x-rmntor.layout-sidebar :$menuGroups />
             <div class="w-full">
                 <nav class="toolbar w-full min-h-[66px] flex justify-between items-center p-4">
                     {{-- Because she competes with no one, no one can compete with her. --}}
