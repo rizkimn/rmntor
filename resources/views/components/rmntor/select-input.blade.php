@@ -10,12 +10,12 @@
 
     <div x-show="selector_active" class="options absolute left-0 top-0 w-full h-full flex flex-col items-center justify-center bg-dark/60 backdrop-blur-sm">
         <ul class="bg-light w-60 rounded-[16px] overflow-hidden">
-            @for($i=1;$i<=6;$i++)
+            @foreach($options AS $i => $option)
             <li class="w-full flex items-center hover:bg-dark/10">
-                <input class="peer hidden" type="radio" name="option" value="option-{{$i}}" id="radio-{{$i}}">
-                <label class="p-4 w-full peer-checked:bg-main peer-checked:text-light" for="radio-{{$i}}">Option {{$i}}</label>
+                <input class="peer hidden" type="radio" name="option" value="{{$option['slug']}}" id="radio-{{$i}}">
+                <label class="p-4 w-full peer-checked:bg-main peer-checked:text-light" for="radio-{{$i}}">{{$option['name']}}</label>
             </li>
-            @endfor
+            @endforeach
         </ul>
         <span @click="selector_active = false" class="bg-light/30 text-light p-2 mt-2 flex items-center justify-center rounded-full cursor-pointer">
             <svg width="20" height="20" viewBox="0 0 0.6 0.6" fill="none" xmlns="http://www.w3.org/2000/svg">
