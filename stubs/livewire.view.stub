@@ -2,6 +2,6 @@
 
 </x-slot:toolbar>
 
-<div>
+<section>
     {{-- [quote] --}}
-</div>
+</section>

@@ -13,6 +13,9 @@ class Icon extends Component
      */
     public function __construct(
         public string $name,
+        public string $color = "main",
+        public int $width = 20,
+        public int $height = 20,
     ) {/** */}
 
     /**
