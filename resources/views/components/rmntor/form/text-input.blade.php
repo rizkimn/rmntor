@@ -1,7 +1,7 @@
 <div class="flex flex-col-reverse">
     <span class="peer has-[:focus]:border-b-2 text-input border border-black/20 text-sm flex items-center rounded-[12px] {{$class}}">
         @if($showIcon)
-        <span class="p-2 rounded-[12px]">
+        <span class="p-2 pr-0 rounded-[12px]">
             <x-rmntor.icon name={{$icon}} width="16" height="16" color="black/30" />
         </span>
         @endif
