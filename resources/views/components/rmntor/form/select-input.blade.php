@@ -9,7 +9,7 @@
     </button>
 
     <div x-show="selector_active" class="options fixed left-0 top-0 w-full h-full flex flex-col items-center justify-center bg-dark/60 backdrop-blur-sm">
-        <ul class="bg-light w-60 rounded-[16px] overflow-hidden">
+        <ul class="bg-light min-w-60 max-w-[96%] rounded-[16px] overflow-hidden">
             @foreach($options AS $i => $option)
             <li class="w-full flex items-center hover:bg-dark/10">
                 <input class="peer hidden" type="radio" name="{{$name}}" value="{{$option['slug']}}" id="radio-{{$i}}" x-on:click="selector_text = '{{$option['name']}}'">
