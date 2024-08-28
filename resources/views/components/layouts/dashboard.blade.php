@@ -13,6 +13,11 @@
                     'href' => 'dashboard/tables',
                     'icon' => 'tables-icon',
                 ],
+                [
+                    'name' => 'Forms',
+                    'href' => 'dashboard/forms',
+                    'icon' => 'form-edit-icon',
+                ],
             ],
         ]
     ]
