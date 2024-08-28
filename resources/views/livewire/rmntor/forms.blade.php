@@ -25,6 +25,11 @@
                     'slug' => "option-6",
                 ],
             ];
+
+    $options2 = [];
+    for ($i=1; $i <= 4; $i++) {
+        $options2[] = ['name' => 'Pilihan '.$i, 'slug' => 'pilihan-'.$i];
+    }
 @endphp
 
 <x-slot:toolbar>
@@ -39,7 +44,7 @@
                 <x-rmntor.form.text-input label="Full Name" name="full-name" placeholder="Budi Arie Setiadi" :show-icon="false" />
             </li>
             <li class="flex items-end">
-                <x-rmntor.form.select-input name="select" :options="$options" label="Pilih Pilihan" />
+                <x-rmntor.form.select-input name="select" :options="$options2" label="Pilih Pilihan" />
             </li>
         </ul>
     </form>
