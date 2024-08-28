@@ -33,11 +33,11 @@
             href="#download-document"
             text="Document"
         />
-        <x-rmntor.select-input
+        <x-rmntor.form.select-input
             :options="$options"
         />
     </div>
-    <x-rmntor.search-input
+    <x-rmntor.form.search-input
         placeholder="Temukan sesuatu..."
     />
 </x-slot:toolbar>

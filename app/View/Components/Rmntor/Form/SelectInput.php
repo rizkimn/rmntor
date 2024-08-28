@@ -20,6 +20,6 @@ class SelectInput extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.rmntor.select-input');
+        return view('components.rmntor.form.select-input');
     }
 }

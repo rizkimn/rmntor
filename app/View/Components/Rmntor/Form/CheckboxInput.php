@@ -1,18 +1,21 @@
 <?php
 
-namespace App\View\Components\Rmntor;
+namespace App\View\Components\Rmntor\Form;
 
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class SearchInput extends Component
+class CheckboxInput extends Component
 {
     /**
      * Create a new component instance.
      */
     public function __construct(
-        public string $placeholder = "Cari sesuatu...",
+        public mixed $index = '',
+        public string $name = '',
+        public bool $showLabel = true,
+        public string $label = "Label",
     )
     {/** */}
 
@@ -21,6 +24,6 @@ class SearchInput extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.rmntor.search-input');
+        return view('components.rmntor.form.checkbox-input');
     }
 }
