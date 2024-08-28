@@ -6,7 +6,7 @@
         </span>
         @endif
         <!-- It is not the man who has too little, but the man who craves more, that is poor. - Seneca -->
-        <input id="input-text-{{$name}}" name="{{$name}}" type="text" class="my-2 mr-2 outline-none w-full" placeholder="{{$placeholder}}" required>
+        <input id="input-text-{{$name}}" name="{{$name}}" type="text" class="m-2 outline-none w-full" placeholder="{{$placeholder}}" required>
     </span>
     <label for="input-text-{{$name}}" class="mb-1 block text-sm font-medium peer-has-[:focus]:text-main peer-has-[:valid]:text-main">{{$label}}</label>
 </div>
