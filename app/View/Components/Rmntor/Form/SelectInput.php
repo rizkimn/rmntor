@@ -13,6 +13,7 @@ class SelectInput extends Component
      */
     public function __construct(
         public string $name = "option",
+        public string $label = "Select",
         public array $options = [
                 [
                     'name' => "Option 1",

@@ -39,7 +39,7 @@
                 <x-rmntor.form.text-input label="Full Name" name="full-name" placeholder="Budi Arie Setiadi" :show-icon="false" />
             </li>
             <li class="flex items-end">
-                <x-rmntor.form.select-input name="select" :options="$options" />
+                <x-rmntor.form.select-input name="select" :options="$options" label="Pilih Pilihan" />
             </li>
         </ul>
     </form>

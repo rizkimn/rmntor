@@ -1,4 +1,4 @@
-<div x-data="{ selector_active: false, selector_text: 'Select' }" class="selector">
+<div x-data="{ selector_active: false, selector_text: '{{$label}}' }" class="selector">
     <button type="button" @click="selector_active = true" class="select-btn flex items-center justify-between px-4 p-2 pr-1 bg-main/10 border border-main rounded-2xl">
         <span class="text text-sm mr-4" x-text="selector_text"></span>
         <span class="icon">
