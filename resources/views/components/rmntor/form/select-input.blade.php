@@ -1,5 +1,5 @@
 <div x-data="{ selector_active: false, selector_text: 'Select' }" class="selector">
-    <button @click="selector_active = true" class="select-btn flex items-center justify-between px-4 p-2 pr-1 bg-main/10 border border-main rounded-2xl">
+    <button type="button" @click="selector_active = true" class="select-btn flex items-center justify-between px-4 p-2 pr-1 bg-main/10 border border-main rounded-2xl">
         <span class="text text-sm mr-4" x-text="selector_text"></span>
         <span class="icon">
             <svg width="20" height="20" viewBox="0 0 0.375 0.375" fill="none" xmlns="http://www.w3.org/2000/svg">
