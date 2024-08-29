@@ -16,6 +16,7 @@ class CheckboxInput extends Component
         public string $name = '',
         public bool $showLabel = true,
         public string $label = "Label",
+        public string $value = "value",
     )
     {/** */}
 
