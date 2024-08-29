@@ -46,6 +46,16 @@
             <path d="M16 12a4 4 0 1 1-4-4 4 4 0 0 1 4 4m0-3v5.5a2.5 2.5 0 0 0 2.5 2.5h0a2.5 2.5 0 0 0 2.5-2.5v-2.19A9.2 9.2 0 0 0 12.6 3a9 9 0 1 0-.6 18 8.8 8.8 0 0 0 3-.52" class="fill-none stroke-{{$color}}" style="stroke-linecap:round;stroke-linejoin:round;stroke-width:2"/>
         </svg>
         @break
+    @case('password-icon')
+        <svg width="{{$width}}" height="{{$height}}" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="stroke-{{$color}}" d="M12.5 8.5v-1a1 1 0 0 0-1-1h-10a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-1m0-4h-4a2 2 0 1 0 0 4h4m0-4a2 2 0 1 1 0 4m-9-6v-3a3 3 0 0 1 6 0v3m2.5 4h1m-3 0h1m-3 0h1"/>
+        </svg>
+        @break
+    @case('eye-icon')
+        <svg width="{{$width}}" height="{{$height}}" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-{{$color}}" fill-rule="evenodd" clip-rule="evenodd" d="M1 10c0-3.9 3.1-7 7-7s7 3.1 7 7h-1c0-3.3-2.7-6-6-6s-6 2.7-6 6zm4 0c0-1.7 1.3-3 3-3s3 1.3 3 3-1.3 3-3 3-3-1.3-3-3m1 0c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2"/>
+        </svg>
+        @break
     @default
         <p>Icon Not Found</p>
 @endswitch
