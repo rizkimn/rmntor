@@ -14,7 +14,10 @@
     <form action="" method="GET">
         <ul class="grid grid-cols-3 gap-4">
             <li>
-                <x-rmntor.form.text-input label="Full Name" name="full-name" placeholder="Budi Arie Setiadi" :show-icon="false" />
+                <x-rmntor.form.text-input label="Full Name" name="full-name" placeholder="Budi Arie Setiadi" />
+            </li>
+            <li>
+                <x-rmntor.form.email-input placeholder="rmn@friendzit.land" />
             </li>
             <li class="flex items-end">
                 <x-rmntor.form.select-input name="select" :options="$options" label="Pilih Pilihan" name="pilihan" />

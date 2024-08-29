@@ -6,18 +6,18 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class TextInput extends Component
+class EmailInput extends Component
 {
     /**
      * Create a new component instance.
      */
     public function __construct(
-        public string $placeholder = 'placeholder',
-        public string $name = 'name',
-        public string $label = 'Label',
+        public string $placeholder = 'rmn@friendzit.land',
+        public string $name = 'email',
+        public string $label = 'Email',
         public string $class = '',
         public bool $showIcon = true,
-        public string $icon = 'letter-icon',
+        public string $icon = 'at-icon',
     ) {/** */}
 
     /**
@@ -25,6 +25,6 @@ class TextInput extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.rmntor.form.text-input');
+        return view('components.rmntor.form.email-input');
     }
 }
