@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\Rmntor;
+namespace App\View\Components\Rmntor\Form;
 
 use Closure;
 use Illuminate\Contracts\View\View;
