@@ -25,10 +25,13 @@
             <li>
                 <x-rmntor.form.date-input name="date" label="Birth Date" />
             </li>
-            <li class="flex items-end">
+            <li>
+                <x-rmntor.form.number-input name="user_pass" />
+            </li>
+            <li class="pt-6">
                 <x-rmntor.form.select-input name="select" :options="$options" label="Pilih Pilihan" name="pilihan" />
             </li>
-            <li class="flex items-end justify-between">
+            <li class="grid grid-cols-3 gap-2">
                 <x-rmntor.form.checkbox-input label="Check Input 1" name="check[]" value="check_1" index="1" />
                 <x-rmntor.form.checkbox-input label="Check Input 2" name="check[]" value="check_2" index="2" />
                 <x-rmntor.form.checkbox-input label="Check Input 3" name="check[]" value="check_3" index="3" />
