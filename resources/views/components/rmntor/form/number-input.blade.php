@@ -6,7 +6,7 @@
         </span>
         @endif
         <!-- It is not the man who has too little, but the man who craves more, that is poor. - Seneca -->
-        <input id="input-number-{{$name}}" name="{{$name}}" type="number" class="m-2 outline-none w-full" placeholder="{{$placeholder}}" required min="{{$min}}" max="{{$max}}">
+        <input id="input-number-{{$name}}" name="{{$name}}" type="number" class="m-2 outline-none w-full" placeholder="{{$placeholder}}" required min="{{$min}}" max="{{$max}}" step="{{$step}}">
     </span>
     <label for="input-number-{{$name}}" class="mb-1 block text-sm font-medium peer-has-[:focus]:text-main peer-has-[:valid]:text-main">{{$label}}</label>
 </div>
