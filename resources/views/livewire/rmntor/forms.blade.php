@@ -32,7 +32,7 @@
                 <x-rmntor.form.select-input name="select" :options="$options" label="Pilih Pilihan" name="pilihan" />
             </li>
             <li>
-                <x-rmntor.form.textarea name="address" label="Home Address" rows="6" />
+                <x-rmntor.form.textarea name="address" label="Home Address" rows="6" icon="house-icon" />
             </li>
             <li class="grid grid-cols-3 gap-2">
                 <x-rmntor.form.checkbox-input label="Check Input 1" name="check[]" value="check_1" index="1" />
