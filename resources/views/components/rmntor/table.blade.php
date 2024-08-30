@@ -8,9 +8,9 @@
             <thead>
                 <tr class="*:bg-main/5 *:border-y *:border-y-main *:py-4 *:font-semibold">
                     <th></th>
-                    <th> <x-rmntor.table.table-column label="No" /> </th>
+                    <th> <x-rmntor.table.table-column label="No" :sortable="false" /> </th>
                     @foreach($columns->keys() as $column)
-                    <th> <x-rmntor.table.table-column :label="$column" /> </th>
+                    <th> <x-rmntor.table.table-column :label="$column" :sortable="true" /> </th>
                     @endforeach
                     <th></th>
                 </tr>
