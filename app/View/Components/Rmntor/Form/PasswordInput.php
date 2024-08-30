@@ -15,6 +15,7 @@ class PasswordInput extends Component
         public string $placeholder = 'Admin#1234',
         public string $name = 'password',
         public string $label = 'Password',
+        public int $minlength = 8,
         public string $class = '',
         public bool $showIcon = true,
         public string $icon = 'password-icon',

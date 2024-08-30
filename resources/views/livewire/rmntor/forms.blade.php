@@ -20,10 +20,10 @@
                 <x-rmntor.form.email-input name="email" />
             </li>
             <li>
-                <x-rmntor.form.password-input name="user_pass" />
+                <x-rmntor.form.password-input name="user_pass" minlength="6" />
             </li>
             <li>
-                <x-rmntor.form.date-input name="date" />
+                <x-rmntor.form.date-input name="date" label="Birth Date" />
             </li>
             <li class="flex items-end">
                 <x-rmntor.form.select-input name="select" :options="$options" label="Pilih Pilihan" name="pilihan" />
@@ -32,6 +32,9 @@
                 <x-rmntor.form.checkbox-input label="Check Input 1" name="check[]" value="check_1" index="1" />
                 <x-rmntor.form.checkbox-input label="Check Input 2" name="check[]" value="check_2" index="2" />
                 <x-rmntor.form.checkbox-input label="Check Input 3" name="check[]" value="check_3" index="3" />
+                <x-rmntor.form.checkbox-input label="Check Input 4" name="check[]" value="check_4" index="4" />
+                <x-rmntor.form.checkbox-input label="Check Input 5" name="check[]" value="check_5" index="5" />
+                <x-rmntor.form.checkbox-input label="Check Input 6" name="check[]" value="check_6" index="6" />
             </li>
         </ul>
         <button class="mt-6 px-4 py-2 bg-main text-white rounded-lg text-sm" type="submit">Submit</button>
