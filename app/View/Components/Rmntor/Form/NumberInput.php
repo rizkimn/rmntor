@@ -16,8 +16,8 @@ class NumberInput extends Component
         public string $name = 'number',
         public string $label = 'Number',
         public string $class = '',
-        public int $min = 0,
-        public int $max = 666,
+        public string $min = 0,
+        public string $max = 666,
         public bool $showIcon = true,
         public string $icon = 'number-icon',
     ) {/** */}
