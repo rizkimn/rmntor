@@ -17,10 +17,13 @@
                 <x-rmntor.form.text-input label="Full Name" name="full-name" placeholder="Budi Arie Setiadi" />
             </li>
             <li>
-                <x-rmntor.form.email-input name="email" placeholder="rmn@friendzit.land" />
+                <x-rmntor.form.email-input name="email" />
             </li>
             <li>
-                <x-rmntor.form.password-input name="user_pass" placeholder="password" />
+                <x-rmntor.form.password-input name="user_pass" />
+            </li>
+            <li>
+                <x-rmntor.form.date-input name="date" />
             </li>
             <li class="flex items-end">
                 <x-rmntor.form.select-input name="select" :options="$options" label="Pilih Pilihan" name="pilihan" />
