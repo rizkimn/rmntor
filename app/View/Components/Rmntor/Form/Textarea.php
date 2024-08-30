@@ -18,7 +18,7 @@ class Textarea extends Component
         public string $class = '',
         public bool $showIcon = true,
         public string $icon = 'letter-icon',
-        public int $rows = 6,
+        public string $rows = "6",
     ) {/** */}
 
     /**

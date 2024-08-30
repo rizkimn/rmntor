@@ -26,7 +26,7 @@
                 <x-rmntor.form.date-input name="date" label="Birth Date" />
             </li>
             <li>
-                <x-rmntor.form.number-input name="user_pass" />
+                <x-rmntor.form.number-input name="number" placeholder="1336-66" />
             </li>
             <li class="pt-6">
                 <x-rmntor.form.select-input name="select" :options="$options" label="Pilih Pilihan" name="pilihan" />
