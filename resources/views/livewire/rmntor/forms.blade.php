@@ -31,6 +31,9 @@
             <li class="pt-6">
                 <x-rmntor.form.select-input name="select" :options="$options" label="Pilih Pilihan" name="pilihan" />
             </li>
+            <li>
+                <x-rmntor.form.textarea name="address" label="Home Address" rows="6" />
+            </li>
             <li class="grid grid-cols-3 gap-2">
                 <x-rmntor.form.checkbox-input label="Check Input 1" name="check[]" value="check_1" index="1" />
                 <x-rmntor.form.checkbox-input label="Check Input 2" name="check[]" value="check_2" index="2" />
