@@ -1,0 +1,7 @@
+<x-slot:toolbar>
+
+</x-slot:toolbar>
+
+<section>
+    {{-- [quote] --}}
+</section>
