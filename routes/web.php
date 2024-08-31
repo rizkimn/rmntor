@@ -3,13 +3,13 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Livewire\Rmntor\Dashboard;
-use App\Livewire\Rmntor\Tables;
-use App\Livewire\Rmntor\Forms;
+use App\Livewire\Students;
+use App\Livewire\Subjects;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/dashboard', Dashboard::class);
-Route::get('/dashboard/tables', Tables::class);
-Route::get('/dashboard/forms', Forms::class);
+Route::get('/dashboard/students', Students::class);
+Route::get('/dashboard/subjects', Subjects::class);

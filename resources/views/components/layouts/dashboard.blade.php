@@ -1,25 +1,30 @@
 @php
     $menuGroups = [
         [
-            'name' => 'Menu',
+            'name' => 'Navigation',
             'items' => [
                 [
                     'name' => 'Dashboard',
                     'href' => 'dashboard',
                     'icon' => 'dashboard-icon',
                 ],
+            ],
+        ],
+        [
+            'name' => 'Study',
+            'items' => [
                 [
-                    'name' => 'Tables',
-                    'href' => 'dashboard/tables',
-                    'icon' => 'tables-icon',
+                    'name' => 'Students',
+                    'href' => 'dashboard/students',
+                    'icon' => 'students-icon',
                 ],
                 [
-                    'name' => 'Forms',
-                    'href' => 'dashboard/forms',
+                    'name' => 'Subjects',
+                    'href' => 'dashboard/subjects',
                     'icon' => 'form-edit-icon',
                 ],
             ],
-        ]
+        ],
     ]
 @endphp
 
