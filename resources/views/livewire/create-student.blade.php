@@ -7,7 +7,8 @@
     <h1 class="text-xl font-semibold mb-2">Create New Student</h1>
 
     <div class="mt-6" style="width:666px">
-        <form wire:submit='create'>
+        <form target="/dashboard/students/new" method="POST"> @csrf @method('POST')
+        {{-- <form wire:submit='create'> --}}
             <ul class="grid grid-cols-1 gap-4">
                 <li>
                     <x-rmntor.form.text-input name="name" label="Full Name" placeholder="" :show-icon="false" />
