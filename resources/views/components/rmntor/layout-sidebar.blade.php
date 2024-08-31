@@ -51,7 +51,7 @@
         <menu class="grid grid-flow-row gap-[6px] max-md:place-content-center mt-2">
             @foreach($menuGroup['items'] as $item)
             <li>
-                <a class="flex items-center group" href="/{{$item['href']}}">
+                <a class="flex items-center group" href="/{{$item['href']}}" wire:navigate>
                     <span class="{{"icon flex items-center justify-center p-2 rounded-xl " . (request()->is($item['href']) ? "bg-main/10" : "bg-main/0")}}">
                         <x-rmntor.icon :name="$item['icon']" />
                     </span>

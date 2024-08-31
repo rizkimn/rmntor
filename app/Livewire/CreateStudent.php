@@ -5,16 +5,20 @@ namespace App\Livewire;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
+use App\Models\Students;
+
+use App\Livewire\Forms\StudentForm;
+
 class CreateStudent extends Component
 {
-    public $name;
-    public $status;
-    public $gpa;
-    public $gps;
-    public $address;
+    public StudentForm $studentForm;
 
     public function create() {
-        dd($this->only(['name', 'status', 'gpa', 'gps', 'address']));
+        $this->validate();
+
+        Students::create($this->studentForm->all());
+
+        return $this->redirect('/dashboard/students');
     }
 
     #[Title("Create New Student")]

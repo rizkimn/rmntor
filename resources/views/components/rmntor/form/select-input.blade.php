@@ -12,7 +12,7 @@
         <ul class="bg-light min-w-60 max-w-[96%] rounded-[16px] overflow-auto">
             @foreach($options AS $i => $option)
             <li class="w-full flex items-center hover:bg-dark/10">
-                <input class="peer hidden" type="radio" name="{{$name}}" value="{{$option['slug']}}" id="radio-{{$i}}" x-on:click="selector_text = '{{$option['name']}}'">
+                <input wire:model='{{$name}}' class="peer hidden" type="radio" name="{{$name}}" value="{{$option['slug']}}" id="radio-{{$i}}" x-on:click="selector_text = '{{$option['name']}}'">
                 <label class="p-4 w-full peer-checked:bg-main peer-checked:text-light" for="radio-{{$i}}">{{$option['name']}}</label>
             </li>
             @endforeach
