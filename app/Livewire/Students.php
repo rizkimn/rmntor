@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use Illuminate\Support\Collection;
+use Livewire\Attributes\Title;
 use Livewire\Component;
 
 use App\Models\Students as StudentModel;
@@ -26,6 +27,7 @@ class Students extends Component
             ];
     }
 
+    #[Title('Students Page')]
     public function render()
     {
         return view('livewire.students');
