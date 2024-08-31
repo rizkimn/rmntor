@@ -11,7 +11,7 @@
     <div x-show="search_active" class="modal absolute bg-dark/50 backdrop-blur-sm left-0 top-0 w-full h-full flex flex-col items-center">
         <div class="box-modal bg-white max-md:w-[86%] w-[36%] p-4 rounded-[36px] mt-36">
             <form class="bg-white border border-main pr-2 flex items-center justify-between rounded-full overflow-hidden" action="#" method="get">
-                <input wire:model='{{$name}}' name="search" autofocus class="bg-none text-sm w-full px-4 py-2 outline-none" type="text" placeholder="{{$placeholder}}">
+                <input wire:model='{{$name}}' name="{{$name}}" autofocus class="bg-none text-sm w-full px-4 py-2 outline-none" type="text" placeholder="{{$placeholder}}">
                 <button type="submit">
                     <svg width="20" height="20" viewBox="0 0 0.6 0.6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="fill-main" fill-rule="evenodd" clip-rule="evenodd" d="M.275.125a.15.15 0 1 0 0 .3.15.15 0 0 0 0-.3m-.2.15a.2.2 0 1 1 .358.123l.085.085a.025.025 0 0 1-.035.035L.398.433A.2.2 0 0 1 .075.275"/>

@@ -13,6 +13,7 @@ class SearchInput extends Component
      */
     public function __construct(
         public string $placeholder = "Cari sesuatu...",
+        public string $name = 'search',
     )
     {/** */}
 
