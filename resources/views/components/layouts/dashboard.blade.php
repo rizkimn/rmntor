@@ -8,6 +8,11 @@
                     'href' => 'dashboard',
                     'icon' => 'dashboard-icon',
                 ],
+                [
+                    'name' => 'Forms',
+                    'href' => 'dashboard/forms',
+                    'icon' => 'form-edit-icon',
+                ],
             ],
         ],
         [

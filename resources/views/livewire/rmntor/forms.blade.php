@@ -42,6 +42,9 @@
                 <x-rmntor.form.checkbox-input label="Check Input 5" name="check[]" value="check_5" index="5" />
                 <x-rmntor.form.checkbox-input label="Check Input 6" name="check[]" value="check_6" index="6" />
             </li>
+            <li>
+                <x-rmntor.form.file-upload />
+            </li>
         </ul>
         <button class="mt-6 px-4 py-2 bg-main text-white rounded-lg text-sm" type="submit">Submit</button>
     </form>
