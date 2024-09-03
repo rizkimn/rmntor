@@ -1,9 +1,11 @@
 <div
     x-data="fileUpload()"
-    x-on:drop.prevent="handleDrop($event)"
     x-on:dragenter.prevent="isDragging = true"
+    x-on:dragover.prevent="isDragging = true"
     x-on:dragleave.prevent="isDragging = false"
-    :class="'w-full border border-main/30 border-dashed aspect-[4/3] rounded-xl hover:bg-main/5'"
+    x-on:drop.prevent="isDragging = false; handleDrop($event)"
+    :class="{'bg-main/5': isDragging}"
+    class="w-full border border-main/30 border-dashed aspect-[4/3] rounded-xl hover:bg-main/5"
     >
     <!-- Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi -->
     <input type="file" name="name" id="input-file-name" class="hidden" accept="*" x-ref="fileInput" x-on:change="handleFileInput">
